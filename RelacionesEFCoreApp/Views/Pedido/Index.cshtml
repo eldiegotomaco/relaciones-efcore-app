@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RelacionesEFCoreApp.Models.Pedido>
+
+<h2>Lista de Pedidos</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Pedido</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Total</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Cliente?.Nombre</td>
+                <td>@item.FechaPedido</td>
+                <td>@item.Total</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,21 @@
+﻿@model RelacionesEFCoreApp.Models.Pedido
+
+<h2>Eliminar Pedido</h2>
+
+<h4>¿Seguro que deseas eliminar este pedido?</h4>
+
+<div>
+    <strong>Cliente:</strong> @Model.Cliente?.Nombre <br />
+    <strong>Fecha:</strong> @Model.FechaPedido <br />
+    <strong>Total:</strong> @Model.Total
+</div>
+
+<form asp-action="Delete">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <br />
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
