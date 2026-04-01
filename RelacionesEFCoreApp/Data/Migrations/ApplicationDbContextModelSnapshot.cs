@@ -17,7 +17,7 @@ namespace RelacionesEFCoreApp.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -224,6 +224,70 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Curso", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Creditos")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cursos");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Estudiante", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Carrera")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Estudiantes");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Inscripcion", b =>
+                {
+                    b.Property<int>("EstudianteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CursoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaInscripcion")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("EstudianteId", "CursoId");
+
+                    b.HasIndex("CursoId");
+
+                    b.ToTable("Inscripciones");
+                });
+
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Perfil", b =>
                 {
                     b.Property<int>("Id")
@@ -233,14 +297,12 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Direccion")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Telefono")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UsuarioId")
@@ -263,11 +325,9 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -326,6 +386,25 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Inscripcion", b =>
+                {
+                    b.HasOne("RelacionesEFCoreApp.Models.Curso", "Curso")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RelacionesEFCoreApp.Models.Estudiante", "Estudiante")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("EstudianteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Curso");
+
+                    b.Navigation("Estudiante");
+                });
+
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Perfil", b =>
                 {
                     b.HasOne("RelacionesEFCoreApp.Models.Usuario", "Usuario")
@@ -337,10 +416,19 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.Navigation("Usuario");
                 });
 
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Curso", b =>
+                {
+                    b.Navigation("Inscripciones");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Estudiante", b =>
+                {
+                    b.Navigation("Inscripciones");
+                });
+
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
                 {
-                    b.Navigation("Perfil")
-                        .IsRequired();
+                    b.Navigation("Perfil");
                 });
 #pragma warning restore 612, 618
         }

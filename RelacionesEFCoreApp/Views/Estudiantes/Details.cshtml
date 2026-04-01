@@ -1,0 +1,44 @@
+﻿@model RelacionesEFCoreApp.Models.Estudiante
+
+<div class="card shadow-sm mb-4">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Detalles del Estudiante: @Model.Nombre</h4>
+    </div>
+    <div class="card-body">
+        <p><strong>Carrera:</strong> @Model.Carrera</p>
+    </div>
+</div>
+
+<h4 class="mb-3 text-info">Cursos Inscritos</h4>
+<a asp-controller="Inscripciones" asp-action="Create" class="btn btn-success mb-3">+ Inscribir a nuevo curso</a>
+
+<table class="table table-dark table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Curso</th>
+            <th>Créditos</th>
+            <th>Fecha Inscripción</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var inscripcion in Model.Inscripciones)
+        {
+            <tr>
+                <td>@inscripcion.Curso.Nombre</td>
+                <td>@inscripcion.Curso.Creditos</td>
+                <td>@inscripcion.FechaInscripcion.ToShortDateString()</td>
+                <td>
+                    <span class="badge @(inscripcion.Estado == "Activo" ? "bg-success" : "bg-warning")">
+                        @inscripcion.Estado
+                    </span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+</div>

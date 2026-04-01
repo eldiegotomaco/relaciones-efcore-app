@@ -1,0 +1,289 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\views\\estudiantes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:views\\estudiantes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\views\\estudiantes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:views\\estudiantes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\controllers\\inscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:controllers\\inscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\models\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:models\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:models\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\models\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:models\\inscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|c:\\users\\erick\\onedrive\\documentos\\web 3\\relacionesavanzadas\\relaciones-efcore-app\\relacionesefcoreapp\\data\\migrations\\20260401025103_usuarioperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A551D1BA-690D-4AEB-9F6A-353B2EBC137C}|RelacionesEFCoreApp.csproj|solutionrelative:data\\migrations\\20260401025103_usuarioperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Estudiantes\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Estudiantes\\Create.cshtml*",
+              "RelativeToolTip": "Views\\Estudiantes\\Create.cshtml*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwCwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T06:55:57.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Estudiantes\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Estudiantes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Estudiantes\\Details.cshtml*",
+              "RelativeToolTip": "Views\\Estudiantes\\Details.cshtml*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T06:55:39.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T06:55:06.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InscripcionesController.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\InscripcionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InscripcionesController.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\InscripcionesController.cs*",
+              "RelativeToolTip": "Controllers\\InscripcionesController.cs*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:40:41.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EstudiantesController.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\EstudiantesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudiantesController.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\EstudiantesController.cs*",
+              "RelativeToolTip": "Controllers\\EstudiantesController.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:40:06.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CursosController.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\CursosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CursosController.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\CursosController.cs*",
+              "RelativeToolTip": "Controllers\\CursosController.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:39:33.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Curso.cs",
+              "RelativeDocumentMoniker": "Models\\Curso.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Curso.cs",
+              "RelativeToolTip": "Models\\Curso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:31:00.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAswK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:38.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Estudiante.cs",
+              "RelativeDocumentMoniker": "Models\\Estudiante.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Estudiante.cs",
+              "RelativeToolTip": "Models\\Estudiante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:31:39.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Inscripcion.cs",
+              "RelativeDocumentMoniker": "Models\\Inscripcion.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Inscripcion.cs",
+              "RelativeToolTip": "Models\\Inscripcion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:31:46.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Perfil.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Perfil.cs",
+              "RelativeDocumentMoniker": "Models\\Perfil.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Perfil.cs",
+              "RelativeToolTip": "Models\\Perfil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:38.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswBsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T06:19:38.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Usuarios\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Views\\Usuarios\\Create.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T06:19:38.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20260401025103_UsuarioPerfil.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Data\\Migrations\\20260401025103_UsuarioPerfil.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260401025103_UsuarioPerfil.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Data\\Migrations\\20260401025103_UsuarioPerfil.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260401025103_UsuarioPerfil.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:38.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:38.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\RelacionesAvanzadas\\relaciones-efcore-app\\RelacionesEFCoreApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAzwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:38.16Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
