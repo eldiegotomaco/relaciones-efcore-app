@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RelacionesEFCoreApp.Data;
 
@@ -11,9 +12,11 @@ using RelacionesEFCoreApp.Data;
 namespace RelacionesEFCoreApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260401063318_AgregaEstudiantesCursos")]
+    partial class AgregaEstudiantesCursos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -224,11 +227,7 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Cliente", b =>
-=======
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Curso", b =>
->>>>>>> origin/rama-erick
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -236,13 +235,8 @@ namespace RelacionesEFCoreApp.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-<<<<<<< HEAD
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-=======
                     b.Property<int>("Creditos")
                         .HasColumnType("int");
->>>>>>> origin/rama-erick
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -250,17 +244,10 @@ namespace RelacionesEFCoreApp.Data.Migrations
 
                     b.HasKey("Id");
 
-<<<<<<< HEAD
-                    b.ToTable("Clientes");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.DetallePedido", b =>
-=======
                     b.ToTable("Cursos");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Estudiante", b =>
->>>>>>> origin/rama-erick
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -268,51 +255,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-<<<<<<< HEAD
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PedidoId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PedidoId");
-
-                    b.HasIndex("ProductoId");
-
-                    b.ToTable("DetallesPedidos");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("FechaPedido")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClienteId");
-
-                    b.ToTable("Pedidos");
-=======
                     b.Property<string>("Carrera")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -347,7 +289,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.HasIndex("CursoId");
 
                     b.ToTable("Inscripciones");
->>>>>>> origin/rama-erick
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Perfil", b =>
@@ -376,26 +317,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("Perfiles");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Producto", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
@@ -468,36 +389,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsRequired();
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.DetallePedido", b =>
-                {
-                    b.HasOne("RelacionesEFCoreApp.Models.Pedido", "Pedido")
-                        .WithMany("Detalles")
-                        .HasForeignKey("PedidoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("RelacionesEFCoreApp.Models.Producto", "Producto")
-                        .WithMany("Detalles")
-                        .HasForeignKey("ProductoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pedido");
-
-                    b.Navigation("Producto");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
-                {
-                    b.HasOne("RelacionesEFCoreApp.Models.Cliente", "Cliente")
-                        .WithMany("Pedidos")
-                        .HasForeignKey("ClienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cliente");
-=======
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Inscripcion", b =>
                 {
                     b.HasOne("RelacionesEFCoreApp.Models.Curso", "Curso")
@@ -515,7 +406,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.Navigation("Curso");
 
                     b.Navigation("Estudiante");
->>>>>>> origin/rama-erick
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Perfil", b =>
@@ -529,21 +419,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.Navigation("Usuario");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Cliente", b =>
-                {
-                    b.Navigation("Pedidos");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
-                {
-                    b.Navigation("Detalles");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Producto", b =>
-                {
-                    b.Navigation("Detalles");
-=======
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Curso", b =>
                 {
                     b.Navigation("Inscripciones");
@@ -552,7 +427,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Estudiante", b =>
                 {
                     b.Navigation("Inscripciones");
->>>>>>> origin/rama-erick
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
