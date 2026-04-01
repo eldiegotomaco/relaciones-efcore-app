@@ -1,0 +1,26 @@
+﻿@model RelacionesEFCoreApp.Models.Pedido
+
+<h2>Crear Pedido</h2>
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label>Cliente</label>
+        <select asp-for="ClienteId" asp-items="ViewBag.ClienteId" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Producto</label>
+        <select name="ProductoId" asp-items="ViewBag.ProductoId" class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label>Cantidad</label>
+        <input name="Cantidad" type="number" class="form-control" />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

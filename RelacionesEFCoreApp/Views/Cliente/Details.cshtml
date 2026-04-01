@@ -1,0 +1,30 @@
+﻿@model RelacionesEFCoreApp.Models.Cliente
+
+<h2>Detalles del Cliente</h2>
+
+<div>
+    <strong>Nombre:</strong> @Model.Nombre <br />
+    <strong>Email:</strong> @Model.Email
+</div>
+
+<hr />
+
+<h3>Pedidos del Cliente</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pedidos)
+        {
+            <tr>
+                <td>@item.FechaPedido</td>
+                <td>@item.Total</td>
+            </tr>
+        }
+    </tbody>
+</table>

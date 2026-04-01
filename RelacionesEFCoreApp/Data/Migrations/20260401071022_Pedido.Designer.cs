@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RelacionesEFCoreApp.Data;
 
@@ -11,9 +12,11 @@ using RelacionesEFCoreApp.Data;
 namespace RelacionesEFCoreApp.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260401071022_Pedido")]
+    partial class Pedido
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -244,35 +247,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.ToTable("Clientes");
                 });
 
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.DetallePedido", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PedidoId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PedidoId");
-
-                    b.HasIndex("ProductoId");
-
-                    b.ToTable("DetallesPedidos");
-                });
-
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
                 {
                     b.Property<int>("Id")
@@ -323,26 +297,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("Perfiles");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Producto", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
@@ -415,25 +369,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.DetallePedido", b =>
-                {
-                    b.HasOne("RelacionesEFCoreApp.Models.Pedido", "Pedido")
-                        .WithMany("Detalles")
-                        .HasForeignKey("PedidoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("RelacionesEFCoreApp.Models.Producto", "Producto")
-                        .WithMany("Detalles")
-                        .HasForeignKey("ProductoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pedido");
-
-                    b.Navigation("Producto");
-                });
-
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
                 {
                     b.HasOne("RelacionesEFCoreApp.Models.Cliente", "Cliente")
@@ -459,16 +394,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Cliente", b =>
                 {
                     b.Navigation("Pedidos");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
-                {
-                    b.Navigation("Detalles");
-                });
-
-            modelBuilder.Entity("RelacionesEFCoreApp.Models.Producto", b =>
-                {
-                    b.Navigation("Detalles");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
