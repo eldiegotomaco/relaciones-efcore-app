@@ -1,0 +1,18 @@
+﻿@model RelacionesEFCoreApp.Models.Producto
+
+<h2>Eliminar Producto</h2>
+
+<p>¿Seguro que deseas eliminar este producto?</p>
+
+<div>
+    <strong>@Model.Nombre</strong> - @Model.Precio
+</div>
+
+<form asp-action="Delete">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <br />
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

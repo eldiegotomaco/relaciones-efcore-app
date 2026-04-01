@@ -1,0 +1,19 @@
+﻿@model RelacionesEFCoreApp.Models.Cliente
+
+<h2>Eliminar Cliente</h2>
+
+<h4>¿Estás seguro de eliminar este cliente?</h4>
+
+<div>
+    <strong>Nombre:</strong> @Model.Nombre <br />
+    <strong>Email:</strong> @Model.Email
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+
+    <br />
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
