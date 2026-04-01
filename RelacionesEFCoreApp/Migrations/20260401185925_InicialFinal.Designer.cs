@@ -9,11 +9,11 @@ using RelacionesEFCoreApp.Data;
 
 #nullable disable
 
-namespace RelacionesEFCoreApp.Data.Migrations
+namespace RelacionesEFCoreApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260401062910_ClientePedido")]
-    partial class ClientePedido
+    [Migration("20260401185925_InicialFinal")]
+    partial class InicialFinal
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -236,7 +236,6 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
@@ -246,6 +245,99 @@ namespace RelacionesEFCoreApp.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Curso", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Creditos")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cursos");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.DetallePedido", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PedidoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PedidoId");
+
+                    b.HasIndex("ProductoId");
+
+                    b.ToTable("DetallesPedidos");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Estudiante", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Carrera")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Estudiantes");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Inscripcion", b =>
+                {
+                    b.Property<int>("EstudianteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CursoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaInscripcion")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("EstudianteId", "CursoId");
+
+                    b.HasIndex("CursoId");
+
+                    b.ToTable("Inscripciones");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
@@ -298,6 +390,26 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("Perfiles");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Producto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
@@ -370,6 +482,44 @@ namespace RelacionesEFCoreApp.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.DetallePedido", b =>
+                {
+                    b.HasOne("RelacionesEFCoreApp.Models.Pedido", "Pedido")
+                        .WithMany("Detalles")
+                        .HasForeignKey("PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RelacionesEFCoreApp.Models.Producto", "Producto")
+                        .WithMany("Detalles")
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pedido");
+
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Inscripcion", b =>
+                {
+                    b.HasOne("RelacionesEFCoreApp.Models.Curso", "Curso")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RelacionesEFCoreApp.Models.Estudiante", "Estudiante")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("EstudianteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Curso");
+
+                    b.Navigation("Estudiante");
+                });
+
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
                 {
                     b.HasOne("RelacionesEFCoreApp.Models.Cliente", "Cliente")
@@ -395,6 +545,26 @@ namespace RelacionesEFCoreApp.Data.Migrations
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Cliente", b =>
                 {
                     b.Navigation("Pedidos");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Curso", b =>
+                {
+                    b.Navigation("Inscripciones");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Estudiante", b =>
+                {
+                    b.Navigation("Inscripciones");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Pedido", b =>
+                {
+                    b.Navigation("Detalles");
+                });
+
+            modelBuilder.Entity("RelacionesEFCoreApp.Models.Producto", b =>
+                {
+                    b.Navigation("Detalles");
                 });
 
             modelBuilder.Entity("RelacionesEFCoreApp.Models.Usuario", b =>
